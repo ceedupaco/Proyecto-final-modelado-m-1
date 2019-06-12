@@ -52,7 +52,7 @@ validacion_generador = test_datagen.flow_from_directory(
     target_size=(altura, longitud),
     batch_size=batch_size,
     class_mode='categorical')
-
+## Ese escribe la red
 cnn = Sequential()
 cnn.add(Convolution2D(filtrosConv1, tamano_filtro1, padding ="same", input_shape=(longitud, altura, 3), activation='relu'))
 cnn.add(MaxPooling2D(pool_size=tamano_pool))
@@ -78,7 +78,7 @@ cnn.fit_generator(
     epochs=epocas,
     validation_data=validacion_generador,
     validation_steps=validation_steps)
-
+#Se guarda el modelo y los pesos
 target_dir = './modelo/'
 if not os.path.exists(target_dir):
   os.mkdir(target_dir)
