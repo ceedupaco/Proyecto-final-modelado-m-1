@@ -1,9 +1,12 @@
 # Proyecto-final-modelado-m-1
-Clasificación del grado de colisión de galaxias.
+
 
 Clasificado de imagenes basado en cnn.
 
-
+Dado un conjunto de imágenes correspondiente a diferentes galaxias, para
+2 ángulos: incl 45 phi 26.4 ; incl 135 phi 153.5 y diferentes intervalos de
+tiempo, se busca entrenar un algoritmo que clasifique estas imágenes según
+su grado de colisión,
 
 ![índice](https://user-images.githubusercontent.com/48209979/57998677-1f48e780-7a98-11e9-9c5f-7ba00b7f840b.jpeg)
 
